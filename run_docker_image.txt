@@ -1,0 +1,1 @@
+docker run -it --mac-address=60:f6:77:b8:95:f7 europe-west2-docker.pkg.dev/simprints-biometrics-dev/sdk-comparisons/sdk-comparison:latest
