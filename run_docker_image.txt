@@ -1,2 +1,6 @@
-#tun this command to have a docker image with a mac address linked to ROC V3 current licence
+#The docker image already has the scripts needed to extract templaces and compare them
+#To run the extraction and comparison on syntetic data you can run the following executable
+#./sdk-comparison  --images=file://./synthetic_data/jpegs --image-extraction=./extraction/extractor.sh --template-comparison=./comparison/compare.sh --output="test_"
+#The extracting script is in the extraction directory and comparison script is inside the comparison dictory inside the docker image,
+#tun this command to have a docker image with a mac address linked to ROC V3 current licence expiring on the 31st of August
 docker run -it --mac-address=60:f6:77:b8:95:f7 europe-west2-docker.pkg.dev/simprints-biometrics-dev/sdk-comparisons/sdk-comparison:latest
