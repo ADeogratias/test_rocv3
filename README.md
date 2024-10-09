@@ -1,19 +1,19 @@
 # Evaluation of a new fingerprint SDK
 
-This project aims to assess the performance a newly developed fingerprint SDK as a biometric applications. 2 files were created to support with the process of extracting and evaluating the performance of the new SDK ROC V3.
+This project aims to assess the performance of a newly developed fingerprint SDK as a biometric application. 2 files were created to support the process of extracting and evaluating the performance of the new SDK ROC V3.
 
 ## Requirements
 For the following scripts to work there is need to be logged into your simprints account, having access to the docker container that Simprints is using and a github that is logged in. 
 
 ## Structure:
 	File 1 - Extraction script - This file contains scripts to help with the extraction of templates from a fingerprint image
- 	File 2 - Compariron script - This file contains scripts to help with the comparison of 2 different generated templates
+ 	File 2 - Comparison script - This file contains scripts to help with the comparison of 2 different generated templates
 
 ## Docker Image
 
 An already existing docker image contains the extractor.sh and compare.sh scripts needed to extract templates and compare them. 
 
-To run the extraction and comparison on syntetic data you can run the following executable
+To run the extraction and comparison on synthetic data you can run the following executable
 
 	`./sdk-comparison  --images=file://./synthetic_data/jpegs --image-extraction=./extraction/extractor.sh --template-comparison=./comparison/compare.sh --output="test_"`
  
